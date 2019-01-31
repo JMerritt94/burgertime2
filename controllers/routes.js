@@ -37,6 +37,7 @@ router.post('/burgertime/resetBurger',function(req,res) {
 // this route is add a burger to the burgertime page
 router.post('/burgertime/create',function(req,res) {
     burger.create(req.body.burger_name, function(result){
+        console. log(result)
         res.redirect('/');
     })
 })
